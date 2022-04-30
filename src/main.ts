@@ -1,4 +1,5 @@
 import { app, BrowserWindow } from 'electron';
+import { registerTitlebarIpc } from '@misc/window/titlebarIPC';
 
 declare const MAIN_WINDOW_WEBPACK_ENTRY: string;
 declare const MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY: string;
@@ -9,17 +10,20 @@ if (require('electron-squirrel-startup')) {
   app.quit();
 }
 
+let mainWindow: BrowserWindow;
+
 const createWindow = (): void => {
   // Create the browser window.
-  const mainWindow = new BrowserWindow({
+  mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
     backgroundColor: '#fff',
     show: false,
     autoHideMenuBar: true,
+    frame: false,
+    titleBarStyle: 'hidden',
     webPreferences: {
       nodeIntegration: false,
-      nativeWindowOpen: true,
       contextIsolation: true,
       nodeIntegrationInWorker: false,
       nodeIntegrationInSubFrames: false,
@@ -32,6 +36,15 @@ const createWindow = (): void => {
 
   // Show window when its ready to
   mainWindow.on('ready-to-show', () => mainWindow.show());
+
+  // Close all windows when main window is closed
+  mainWindow.on('close', () => {
+    mainWindow = null;
+    app.quit();
+  });
+
+  // Register Inter Process Communication for main process
+  registerMainIPC();
 };
 
 // This method will be called when Electron has finished
@@ -58,3 +71,14 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
+
+/**
+ * Register Inter Process Communication
+ */
+function registerMainIPC() {
+  /**
+   * Here you can assign IPC related codes for the application window
+   * to Communicate asynchronously from the main process to renderer processes.
+   */
+  registerTitlebarIpc(mainWindow);
+}

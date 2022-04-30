@@ -30,10 +30,10 @@ ERWT is a minimal boilerplate for writing Desktop Applications using [Electron](
 
 #### To install the ERWT boilerplate you need to run following commands
 
-Clone the minimal version repository :
+Clone the repository :
 
 ```bash
-git clone -b minimal https://github.com/codesbiome/electron-react-webpack-typescript-2022
+git clone --recurse-submodules git@github.com:john-whiting/electron-boilerplate.git
 ```
 
 <br>

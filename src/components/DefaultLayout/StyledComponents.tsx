@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const BackgroundContainer = styled('div')`
-  min-height: 100vh;
+  min-height: calc(100vh - 28px);
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -11,6 +11,6 @@ export const BackgroundContainer = styled('div')`
 export const BodyContainer = styled('div')`
   padding: 1em;
   width: -webkit-fill-available;
-  max-height: 100vh;
+  max-height: calc(100vh - 28px);
   overflow: auto;
 `;
