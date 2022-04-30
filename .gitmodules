@@ -1,3 +1,0 @@
-[submodule "misc/window"]
-	path = misc/window
-	url = git@github.com:guasam/electron-window.git
