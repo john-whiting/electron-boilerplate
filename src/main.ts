@@ -20,7 +20,7 @@ const createWindow = (): void => {
     backgroundColor: '#fff',
     show: false,
     autoHideMenuBar: true,
-    frame: false,
+    frame: process.platform === 'linux',
     titleBarStyle: 'hidden',
     webPreferences: {
       nodeIntegration: false,
