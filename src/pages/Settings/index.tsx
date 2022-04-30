@@ -1,4 +1,4 @@
 import { FC } from 'react';
 
-const HomePage: FC = () => <>Page 1</>;
+const HomePage: FC = () => <>Settings Page</>;
 export default HomePage;

@@ -1,0 +1,34 @@
+{
+  "TSX React Component": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "tsx-no-props",
+    "body": [
+      "import { FC } from 'react';",
+      "",
+      "const ${1:componentName}: FC = ({}) => {",
+      "\tconst a = 'a'; // Replace with additional code",
+      "\treturn <>$0</>;",
+      "}",
+      "export default ${1:componentName};"
+    ],
+    "description": "Places a TSX React component with a default export and no props"
+  },
+  "TSX React Component With Props": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "tsx-props",
+    "body": [
+      "import { FC } from 'react';",
+      "",
+      "export type ${1:componentName}Props = {",
+      "\t",
+      "};",
+      "",
+      "const ${1:componentName}: FC<${1:componentName}Props> = ({}) => {",
+      "\tconst a = 'a'; // Replace with additional code",
+      "\treturn <>$0</>;",
+      "}",
+      "export default ${1:componentName};"
+    ],
+    "description": "Places a TSX React component with a default export and props"
+  }
+}

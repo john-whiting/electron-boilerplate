@@ -1,10 +1,7 @@
 import ControlledInput from '@src/components/ControlledInput';
-import { RoutePaths } from '@src/contants';
-import { InputNumber } from 'antd';
+import { Input } from 'antd';
 import { FC } from 'react';
 import { useForm } from 'react-hook-form';
-
-import { Link } from 'react-router-dom';
 
 type TestForm = {
   randomInput: string;
@@ -17,11 +14,60 @@ const HomePage: FC = () => {
 
   return (
     <>
-      Home page! <Link to={RoutePaths.Page1}>Goto Page 1</Link>
+      Home page!
       <p>Your Input: {watchRandomInput}</p>
       <ControlledInput control={control} name='randomInput'>
-        <InputNumber />
+        <Input />
       </ControlledInput>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
+      <p>Test</p>
     </>
   );
 };

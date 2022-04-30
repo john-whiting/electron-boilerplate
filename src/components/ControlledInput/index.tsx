@@ -36,8 +36,8 @@ type RenderFunctionInput = {
 
 const ControlledInput: FC<ControlledInputProps> = ({ children, ...props }) => {
   const rendered = useCallback(
-    ({ field, ...rest }: RenderFunctionInput): ReactElement =>
-      cloneElement(children, { ...field, ...rest }),
+    ({ field }: RenderFunctionInput): ReactElement =>
+      cloneElement(children, { ...field }),
     [children],
   );
 
