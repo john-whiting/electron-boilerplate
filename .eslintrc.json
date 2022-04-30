@@ -35,6 +35,8 @@
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-var-requires": "off",
-    "arrow-body-style": ["error", "as-needed"]
+    "arrow-body-style": ["error", "as-needed"],
+    "semi": "warn",
+    "comma-dangle": ["warn", "always-multiline"]
   }
 }
