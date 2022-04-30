@@ -8,9 +8,9 @@ module.exports = {
     // Create asar archive for main, renderer process files
     asar: true,
     // Set executable name
-    executableName: 'apextgs-universal-app',
+    executableName: '--boilerplate--',
     // Set application copyright
-    appCopyright: 'Copyright (C) 2022 Apex Target Systems LLC',
+    appCopyright: 'Copyright (C) 2022 Johnathan Whiting',
   },
   // Forge Makers
   makers: [
@@ -19,7 +19,7 @@ module.exports = {
       // Windows applications and is therefore the most user friendly you can get.
       name: '@electron-forge/maker-squirrel',
       config: {
-        name: 'apextgs-universal-app',
+        name: '--boilerplate--',
       },
     },
     {

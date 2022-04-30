@@ -1,8 +1,8 @@
 {
-  "name": "apextgs-universal-app",
-  "productName": "Apex Target Systems - Universal App",
+  "name": "--boilerplate--",
+  "productName": "!!BOILERPLATE!!",
   "version": "0.1.0",
-  "description": "Apex Target Systems Universal App",
+  "description": "!!BOILERPLATE",
   "main": ".webpack/main",
   "scripts": {
     "start": "cross-env NODE_ENV=development electron-forge start",
@@ -13,7 +13,6 @@
   },
   "keywords": [
     "electron",
-    "apex target systems"
   ],
   "author": {
     "name": "John Whiting",
