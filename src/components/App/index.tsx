@@ -3,6 +3,7 @@ import { hot } from 'react-hot-loader';
 import ThemePickerProvider from '@src/contexts/ThemePicker';
 import DefaultLayout from '../DefaultLayout';
 
+import 'antd/dist/antd.css';
 import './style.less';
 import IndexPage from '@src/pages';
 

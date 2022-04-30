@@ -1,6 +1,6 @@
 import ControlledInput from '@src/components/ControlledInput';
 import { RoutePaths } from '@src/contants';
-import { Input } from 'antd';
+import { InputNumber } from 'antd';
 import { FC } from 'react';
 import { useForm } from 'react-hook-form';
 
@@ -20,7 +20,7 @@ const HomePage: FC = () => {
       Home page! <Link to={RoutePaths.Page1}>Goto Page 1</Link>
       <p>Your Input: {watchRandomInput}</p>
       <ControlledInput control={control} name='randomInput'>
-        <Input />
+        <InputNumber />
       </ControlledInput>
     </>
   );
