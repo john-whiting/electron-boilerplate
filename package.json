@@ -1,8 +1,8 @@
 {
-  "name": "electron-react-typescript-webpack-2022",
-  "productName": "ERWT Boilerplate",
-  "version": "5.4.0",
-  "description": "Custom boilerplate for writing Desktop Applications using Electron, React, Webpack, TypeScript in 2022",
+  "name": "apextgs-universal-app",
+  "productName": "Apex Target Systems - Universal App",
+  "version": "0.1.0",
+  "description": "Apex Target Systems Universal App",
   "main": ".webpack/main",
   "scripts": {
     "start": "cross-env NODE_ENV=development electron-forge start",
@@ -12,31 +12,13 @@
     "lint": "eslint src/ --ext .ts,.js,.tsx,.jsx"
   },
   "keywords": [
-    "electron boilerplate",
-    "minimal",
-    "electron-webpack",
-    "electron-react",
-    "electron-typescript",
-    "hmr",
-    "boilerplate",
-    "2022",
-    "ERWT"
+    "electron",
+    "apex target systems"
   ],
   "author": {
-    "name": "codesbiome",
-    "url": "https://github.com/codesbiome"
+    "name": "John Whiting",
+    "url": "https://jwhiting.dev"
   },
-  "contributors": [
-    {
-      "name": "guasam",
-      "url": "https://github.com/guasam"
-    }
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/codesbiome/electron-react-webpack-typescript-2020"
-  },
-  "license": "MIT",
   "config": {
     "forge": "./tools/forge/forge.config.js"
   },
@@ -51,6 +33,7 @@
     "@types/node": "^17.0.19",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.25",
     "@types/webpack-env": "^1.16.3",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
@@ -62,6 +45,7 @@
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
     "file-loader": "^6.2.0",
     "fork-ts-checker-webpack-plugin": "^7.2.1",
     "less": "^4.1.2",
@@ -75,8 +59,12 @@
   },
   "dependencies": {
     "@hot-loader/react-dom": "^17.0.2",
+    "antd": "^4.20.1",
     "electron-squirrel-startup": "^1.0.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.30.0",
+    "react-router-dom": "^6.3.0",
+    "styled-components": "^5.3.5"
   }
 }

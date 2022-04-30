@@ -7,6 +7,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/errors",
@@ -32,6 +33,8 @@
   },
   "rules": {
     "react/prop-types": "off",
-    "@typescript-eslint/no-var-requires": "off"
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "arrow-body-style": ["error", "as-needed"]
   }
 }
